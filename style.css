@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Common Element Configuration */
+
+h1, h2, h3, h4, h5, h6, span {
+    color: #242424;
+    text-align: center;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Generic Classes */
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text__purple {
+    color: #6030b1;
+}
+
+section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.section__title {
+    margin-bottom: 20px;
+}
+
+/* Nav Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav__link--list {
+    display: flex;
+}
+
+.nav__link--anchor {
+    color: #242424;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.nav__link--anchor-primary {
+    color: white;
+    background-color: #6030b1;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all 300ms ease;
+}
+
+.nav__link--anchor-primary:hover {
+    background-color: #5d3eff;
+}
+
+.personal__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6030b1;
+    margin: 0 12px;
+}
+
+/* About Me */
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    height: calc 100vh - 100px;
+}
+
+about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-me__picture--mask {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    margin-bottom: 28px;
+}
+
+.about-me__picture {
+    width: 100%;
+
+    /* Picture Enhancement */
+    transform: scale(1.5);
+    padding-top: 8px;
+}
+
+.about-me__info--title {
+    margin-bottom: 16px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.about-me__links {
+    margin: 0 16px;
+}
+
+.about-me__link {
+    font-size: 20;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.about-me__img {
+    width: 100%;
+}
+
+/* Tech Stack */
+.language__img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language__list {
+    display: flex;
+    width: 100%;
+}
+
+.language {
+    width: 25%;
+}
